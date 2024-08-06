@@ -1,0 +1,315 @@
+:root{
+    --nav-bar : #19506f;
+    --body : #022F40;
+    --tint: #49cdee;    
+    --header: #2acaff;
+    --button: #0090C1;
+}
+
+body{
+    background-image: linear-gradient(to right top, #183e56, #1d4f6a, #14465e, #124b62, #0f4f66);
+    color: white;
+    transition: 0.8s;
+}
+/* .reveal{
+    position: relative;
+    transform: translateY(130px);
+    opacity: 0;
+    transition: 1s all ease;
+}  
+.reveal.active
+{
+    transform: translateY(0);
+    opacity: 1;
+} */
+body::-webkit-scrollbar{
+    width: 5px;
+}
+body::-webkit-scrollbar-track{
+    background: var(--body);
+}
+body::-webkit-scrollbar-thumb{
+    background: var(--tint);
+    border-radius: 20px;
+}
+
+/*................... nav bar start .................  */
+#navbar-example{
+    background-color: var(--nav-bar);
+}
+.navbar .nav-link.active,
+.nav-link:hover{
+    color: var(--tint);
+}
+.navbar-toggler{
+    border: none;
+    color: white;
+    box-shadow: none;
+    outline: 0;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+#navbarNav{
+    justify-content: right;
+}
+.navbar-nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.nav-item{
+    padding: 0 25px;
+    position: relative;
+}
+.nav-link{
+    color: white;
+}
+.nav-item:hover::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: var(--tint);
+    position: absolute;
+    left: 0;
+}
+/*................... nav bar end .................  */
+
+/*................... home start .................  */
+#home{
+    align-items: center;
+    margin: 50px auto 0;
+}
+#hello p{
+    font-size: 14pt;
+    line-height: 1.8;
+    width: 70%;
+    margin: auto;
+}
+#hello h1{
+    text-transform: uppercase;
+    font-weight: bold; 
+    color: var(--header);
+    font-size: 34pt;
+}
+#hello img{
+    margin-top: -20px;
+}
+
+/*// Glow Border Animation //*/
+#center-box{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 3rem;
+    height: 3rem;
+    font-size: 14pt;
+    text-decoration: none;
+    margin-right: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.animated-border-box, .animated-border-box-glow{
+    max-height: 60px;
+    max-width: 60px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden; 
+    z-index: 0;
+    border-radius: 10px;
+}
+.animated-border-box a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    height: 80%;
+    margin: 6px auto;
+    border-radius: 7px;
+    font-size: 14pt;
+    text-decoration: none;
+    color: white;
+    background-color: var(--nav-bar);
+}
+.animated-border-box a:hover{
+    background-color: var(--button);
+    color: white;
+}
+.animated-border-box-glow{
+    overflow: hidden;
+    filter: blur(20px);
+}
+.animated-border-box:before, .animated-border-box-glow:before{
+    content: '';
+    z-index: -2;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    position: absolute;
+    width: 99999px;
+    height: 99999px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: conic-gradient( #14aadc, rgba(69, 47, 47, 0) 23%);
+    animation: rotate 4s linear infinite;
+}
+.animated-border-box:after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 5px;
+    top: 5px;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    background: transparent;
+    border: 2px solid var(--header);
+    border-radius: 7px;
+}
+@keyframes rotate {
+    100% {
+    transform: translate(-50%, -50%) rotate(1turn);
+    }
+}
+/*// Border Animation END//*/
+
+@media screen and (max-width: 768px){
+    #hello p{
+        width: 100%;
+        font-size: 13pt;
+    }
+    #hello h1{
+        font-size: 29pt;
+    }
+    #hello img{
+        width: 50% !important;
+        margin-top: -80px;
+    }
+    #hello .order-md-1{
+        margin-top: -30px;
+        margin-bottom: 40px;
+    }
+}
+/*................... home end .................  */
+
+/*................... about me start .................  */
+#about{ 
+    margin-bottom: 40px;
+    padding-top: 50px;
+    color: white;
+    border-top: 2px solid var(--header);
+}
+#about-content > h3{
+    font-size: 25pt;
+}
+#about-content > h4{
+    margin-bottom: 20px;
+    font-size: 15pt;
+    font-weight: 200;
+    font-family: calibri;
+}
+#about-content > p{
+    line-height: 1.8;
+    word-spacing: 3px;
+    font-family: calibri;
+    font-size: 13pt;
+}
+#hire{
+    padding: 10px 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: var(--nav-bar);
+    border: 1px solid var(--header);
+    color: white;
+    box-shadow: 4px 3px 8px #0e3045;
+}
+#hire:hover{
+    background-color: var(--button);
+    color: white;
+    box-shadow: none;
+}
+
+#skill{
+    margin-top: 80px;
+    background-color: #245770cb;
+    padding: 35px 35px 50px;
+    border-radius: 10px;
+    border: 1px solid var(--header);
+}
+#skill-content .col-lg-7{
+    padding-left: 80px;
+}
+#span-block{
+    display: flex; 
+    align-items: center;
+    width: fit-content;
+}
+#span-block > h3{
+    font-size: 25pt;
+}
+#span-block > span{
+    display: inline-block;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--header);
+    width: 25px;
+    height: 4px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+#development-content h6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 70px;
+    margin: auto;
+    background-color: transparent;
+    text-align: center;
+    border: 1px solid var(--tint);
+    border-radius: 20%;
+}
+#tool-content i{
+    color: var(--tint);
+}
+
+#design-content > img{
+    display: block;
+    object-fit: cover;
+    width: 35px;
+    height: 35px;
+}
+
+@media screen and (max-width: 768px){
+    #skill{
+        margin: 80px 20px !important;
+    }
+    #skill-content .col-lg-7{
+        padding-left: 0 !important;
+        margin-top: 20px;
+    }
+    #skill-content .col-lg-7 > div > .d-flex:nth-child(1){
+        border-top: 1px solid white;
+        padding-top: 25px;
+    }
+    #tool-content,
+    #design-content{
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width: 576px){
+    #development-content h6{
+        width: 100%;
+        height: 50px;
+        border-radius: 10px;
+    }
+}
+
+#experience{
+    margin: 90px 0;
+}
+/*................... about me end .................  */
