@@ -97,11 +97,11 @@
     <!-- about  -->
     <section class="about reveal" id="about">
         <div class="container-lg">
-            <div class="row align-items-center align-content-center">
-                <div class="col-lg-6 col-sm-6 text-center">
-                    <img src="" class="w-75">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-6 text-center">
+                    <img src="image/Untitled81_20240818224828.png" class="w-75">
                 </div>
-                <div class="col-lg-6 col-sm-6 mt-4" id="about-content">
+                <div class="col-lg-6 col-md-6" id="about-content">
                     <h3>About <span style="color: #1cbef4;">Me</span></h3>
                     <h4>Hello, I'm HP. Nice to meet you. </h4>
                     <p>A beginner developer who is passionate about building software that solves real-world problems. In my free time, you'll find me working on personal coding projects. I have experience developing and designing software for the web, from simple landing pages to progressive web applications. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.</p>
@@ -253,6 +253,60 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- contact  -->
+    <section id="contact" class="reveal">
+        <h2>Contact <span style="color: #1cbef4;">Me</span></h2>
+        <div class="container-lg mt-5">
+            <div class="row">
+                <div class="col-lg-6 col-sm-6 ps-5">
+                    <h4 style="font-family:Arial, Helvetica, sans-serif;">Let's work together!</h4>
+                    <div id="contact-info" >
+                        <p><i class="fa-solid fa-phone me-3"></i><label>+95972484290</label></p>
+                        <p><i class="fa-solid fa-envelope me-3"></i><label>hp03webdeveloper@gmail.com</label></p>
+                        <p><i class="fa-solid fa-location-dot me-3"></i><label>No.478/B, Hlaw Gar Rd, <br> South Dagon Township, Yangon</label></p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                    <form>
+                        <div class="container-lg">
+                            <div class="row text-center">
+                                <div class="col-lg-6 form-group">
+                                    <input type="text" placeholder="Full Name" class="form-control" id="name" required>
+                                </div>
+                                <div class="col-lg-6 form-group">
+                                    <input type="number" placeholder="Phone Number" class="form-control" id="phone" required>
+                                </div>
+                                <div class="col-lg-12 form-group">
+                                    <input type="email" placeholder="Email Address" class="form-control" id="email" required>
+                                </div>
+                                <div class="col-lg-12 form-group" id="textarea">
+                                    <textarea rows="6" placeholder="Message" class="form-control" id="message" required></textarea>
+                                </div>
+                                <div class="col-lg-12 form-group text-start">
+                                    <button type="submit" id="send" class="btn" onclick="sendEmail(event);">Send Message</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer  -->
+    <section id="footer">
+        <div id="footer-social">
+            <a href="https://www.facebook.com/hp.spring.39/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://discord.com/channels/@me"><i class="fa-brands fa-discord"></i></a>
+            <a href="https://www.instagram.com/__hyung03/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/daniel-0104"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <hr>
+        <div id="footer-text">
+            <p><i class="fa-regular fa-copyright"></i><label>2024 - created by me | All Rights Reserved.</label></p>
         </div>
     </section>
 </body>
