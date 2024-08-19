@@ -426,9 +426,8 @@ body::-webkit-scrollbar-thumb{
     padding-bottom: 20px;
 }
 .experience-service{
-    padding-top: 40px;
+    padding: 40px 10px;
     border-bottom: 3px solid var(--tint);
-    padding-bottom: 30px;
 }
 .dev-service p,
 .responsive-service p,
