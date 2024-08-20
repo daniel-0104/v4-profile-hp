@@ -1,5 +1,5 @@
 :root{
-    --nav-bar : #1d5a7d;
+    --nav-bar : #226286;
     --body : #022F40;
     --tint: #49cdee;    
     --header: #2ad8ff;
@@ -7,7 +7,7 @@
     --bg: #104966d2;
 }
 body{
-    background-image: linear-gradient(to right top, #183e56, #25556e, #1f5974, #124b62, #0f4f66);
+    background-image: linear-gradient(to right top, #183e56, #2b607d, #1f5974, #1a5f7a, #1d6883);
     color: white;
     transition: 0.8s;
 }
@@ -408,8 +408,9 @@ body::-webkit-scrollbar-thumb{
 #services > div,
 #img-background > img{
     position: relative;
+    display: block;
     width: 100%;
-    height: 730px;
+    height: 120vh;
     object-fit: cover;
 }
 #img-background > span{
@@ -417,8 +418,8 @@ body::-webkit-scrollbar-thumb{
     top: 0;
     display: block;
     width: 100%;
-    height: 730px;
-    background-color: #1b374580;
+    height: 100%;
+    background-color: #1b374594;
 }
 #service-content{
     position: absolute;
@@ -435,26 +436,61 @@ body::-webkit-scrollbar-thumb{
     font-weight: bold;
 }
 .dev-service{
-    border-right: 3px solid var(--tint);
-    border-bottom: 3px solid var(--tint);
+    border-right: 1px solid var(--tint);
+    border-bottom: 1px solid var(--tint);
     padding-top: 20px;
     padding-bottom: 20px;
 }
 .responsive-service{
     padding-left: 40px;
-    border-bottom: 3px solid var(--tint);
+    border-bottom: 1px solid var(--tint);
     padding-top: 20px;
     padding-bottom: 20px;
 }
 .experience-service{
-    padding: 50px 10px;
-    border-bottom: 3px solid var(--tint);
+    padding: 40px 10px;
+    border-bottom: 1px solid var(--tint);
 }
 .dev-service p,
 .responsive-service p,
 .experience-service p{
     font-family: calibri;
     font-size: 14pt;
+}
+@media screen and (max-width: 992px){
+    #service-content .row{
+        padding: 0 30px;
+    }
+}
+@media screen and (max-width: 768px){
+    #services > div,
+    #img-background > img{
+        height: 140vh;
+    }
+    .dev-service{
+        border-right: none;
+    }
+    .responsive-service{
+        padding-left: 10px;
+    }
+    .experience-service{
+        padding: 20px 10px;
+    }
+}
+@media screen and (min-width: 470px) and (max-width: 603px){
+    #services > div,
+    #img-background > img{
+        height: 160vh;
+    }
+}
+@media screen and (max-width: 469px){
+    #service-content .row{
+        padding: 0 20px;
+    }
+    #services > div,
+    #img-background > img{
+        height: 190vh;
+    }
 }
 /*................... services end .................  */
 
@@ -465,9 +501,17 @@ body::-webkit-scrollbar-thumb{
     margin-bottom: 100px;
 }
 #portfolio > h2{
-    text-align: center;
     font-size: 28pt;
-    margin-bottom: 50px;
+    margin: 0 30px 50px;
+    padding-left: 60px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--header);
+}
+/* #portfolio-content > div{
+    background-color: var(--bg);
+} */
+#portfolio-content > div > img{
+    width: 85%;
 }
 /*................... portfolio end.................  */
 
@@ -497,8 +541,8 @@ body::-webkit-scrollbar-thumb{
     padding-top: 13px;
     padding-bottom: 13px;
     margin-bottom: 16px;
-    background-color: #3f7494;
-    border: 1px solid #27648f;
+    background-color: var(--bg);
+    border: 1px solid var(--bg);
 }
 .form-control::placeholder{
     color: rgba(255, 255, 255, 0.784);
@@ -506,7 +550,7 @@ body::-webkit-scrollbar-thumb{
 }
 .form-control:focus{
     box-shadow: none;
-    background-color: #27648f;
+    background-color: var(--bg);
     border: 1px solid var(--header);
     color: white;
 }
