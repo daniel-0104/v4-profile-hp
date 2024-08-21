@@ -1,13 +1,13 @@
 :root{
-    --nav-bar : #226286;
+    --nav-bar : #114a6e;
     --body : #022F40;
-    --tint: #49cdee;    
-    --header: #2ad8ff;
-    --button: #0090C1;
-    --bg: #104966d2;
+    --tint: #00ddff;    
+    --header: #0fd3ff;
+    --button: #1176b1;
+    --bg: #042e438d;
 }
 body{
-    background-image: linear-gradient(to right top, #183e56, #2b607d, #1f5974, #1a5f7a, #1d6883);
+    background-image: linear-gradient(to right top, #154561, #114564, #0c4566, #074569, #02456b);
     color: white;
     transition: 0.8s;
 }
@@ -395,7 +395,7 @@ body::-webkit-scrollbar-thumb{
     margin-top: -7px;
 	border-top: 7px solid transparent;
 	border-bottom: 7px solid transparent; 
-	border-right: 7px solid #104966; 
+	border-right: 7px solid #073b55; 
 }
 /*................... about me end .................  */
 
@@ -579,7 +579,7 @@ textarea{
 
 /*................... footer start .................  */
 #footer{
-    background-color:#0000008d;
+    background-color:#08080897;
     padding: 15px 0 25px !important;
 }
 #footer-social{
