@@ -497,19 +497,38 @@ body::-webkit-scrollbar-thumb{
 
 /*................... portfolio start .................  */
 #portfolio{
-    margin-top: 80px;
+    margin-top: 140px;
     margin-bottom: 100px;
 }
-#portfolio > h2{
+#portfolio > div:first-child{
+    display: block;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+#portfolio > div:first-child > i{
+    color: var(--tint);
+    font-size: 20pt;
+}
+#portfolio > div:first-child > h2{
     font-size: 28pt;
-    margin: 0 30px 50px;
-    padding-left: 60px;
+    text-transform: uppercase;
+    background-color: red;
+}
+#portfolio > div:first-child::after{
+    content: '';
+    width: 250px;
+    height: 4px;
+    border-radius: 10px;
+    background-color: var(--header);
+    margin-left: 30px;
+    margin-bottom: 0;
 }
 #portfolio-content{
     background-color: var(--bg);
     margin: 0 20px;
     padding: 40px 0;
-    /* border: 1px solid var(--header); */
     border-radius: 8px;
 }
 #portfolio-content > img{
@@ -539,6 +558,13 @@ body::-webkit-scrollbar-thumb{
 #portfolio-content > div > label{
     margin-top: 15px;
     line-height: 1.8;
+}
+#language-content > span{
+    padding: 10px 25px;
+    border-radius: 8px;
+    border: 1px solid var(--button);
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.702);
+    margin-right: 20px;
 }
 /*................... portfolio end.................  */
 
