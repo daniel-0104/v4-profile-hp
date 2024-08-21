@@ -509,14 +509,36 @@ body::-webkit-scrollbar-thumb{
     background-color: var(--bg);
     margin: 0 20px;
     padding: 40px 0;
-    border: 1px solid var(--header);
+    /* border: 1px solid var(--header); */
     border-radius: 8px;
 }
 #portfolio-content > img{
     width: 90%;
 }
 #portfolio-content > div{
-    margin: 0 90px;
+    margin: 0 50px;
+    border-top: 1px solid var(--header);
+    padding-top: 20px;
+}
+#portfolio-content > div h3{
+    text-transform: uppercase;
+    font-family: calibri;
+    font-weight: bold;
+}
+#demo{
+    padding: 8px 40px;
+    background-color: var(--nav-bar);
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#demo:hover{
+    color: white;
+    border: 1px solid var(--header);
+}
+#portfolio-content > div > label{
+    margin-top: 15px;
+    line-height: 1.8;
 }
 /*................... portfolio end.................  */
 
