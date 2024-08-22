@@ -390,12 +390,16 @@ body::-webkit-scrollbar-thumb{
 	border-right: 7px solid #094868; 
 }
 @media screen and (max-width: 450px){
-    #experience .row .col-lg-8{
-        background-color: red;
-        margin-right: 0 !important;
+    #ex-icon{
+        margin-left: -30px;
+        margin-right: 10px;
+        width: 35px;
+        height: 35px;
+        font-size: 11pt;
     }
-    .bar {
-        padding: 10px 30px 8px 20px;
+    .bar > p{
+        line-height: 1.6;
+        margin-top: 10px;
     }
 }
 
@@ -639,6 +643,11 @@ textarea{
     color: white;
     background-color: var(--nav-bar);
     border: 1px solid var(--header);
+}
+@media screen and (max-width: 800px){
+    #contact .col-lg-6:first-child{
+        padding-left: 20px !important;
+    }
 }
 /*................... contact end .................  */
 
