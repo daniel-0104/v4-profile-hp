@@ -3,8 +3,8 @@
     --body : #022F40;
     --tint: #00ddff;    
     --header: #0fd3ff;
-    --button: #1176b1;
-    --bg: #164666e4;
+    --button: #1785c5;
+    --bg: #0e4669c8;
 }
 body{
     background-image: linear-gradient(to right top, #0a3957, #0c3b58, #0d3d5a, #0f3f5b, #11415c);
@@ -420,7 +420,7 @@ body::-webkit-scrollbar-thumb{
 
 /*................... services start .................  */
 #services{
-    margin-top: 150px;
+    margin-top: 130px;
     margin-bottom: 100px;
 }
 #services > div,
@@ -507,7 +507,7 @@ body::-webkit-scrollbar-thumb{
     }
     #services > div,
     #img-background > img{
-        height: 170vh;
+        height: 180vh;
     }
     .dev-service p,
     .responsive-service p,
@@ -536,33 +536,28 @@ body::-webkit-scrollbar-thumb{
     font-size: 20pt;
 }
 #portfolio > div:first-child > h2{
-    font-size: 28pt;
+    font-size: 26pt;
     text-transform: uppercase;
-    background-color: red;
 }
-#portfolio > div:first-child::after{
-    content: '';
-    width: 250px;
-    height: 4px;
-    border-radius: 10px;
-    background-color: var(--header);
-    margin-left: 30px;
-    margin-bottom: 0;
-}
-#portfolio-content{
+#portfolio-content,
+#portfolio-content-ph{
     background-color: var(--bg);
     margin: 0 20px;
     padding: 40px 0;
     border-radius: 8px;
+    box-shadow: 2px 0 6px rgba(0, 0, 0, 0.627);
 }
-#portfolio-content > img{
+#portfolio-content > img,
+#portfolio-content-ph > img{
     width: 90%;
 }
-#portfolio-content > div{
+#portfolio-content > div,
+#portfolio-content-ph > div{
     margin: 0 50px;
     border-top: 1px solid var(--header);
     padding-top: 20px;
 }
+#portfolio-content > div h3,
 #portfolio-content > div h3{
     text-transform: uppercase;
     font-family: calibri;
@@ -570,7 +565,7 @@ body::-webkit-scrollbar-thumb{
 }
 #demo{
     padding: 8px 40px;
-    background-color: var(--nav-bar);
+    background-color: #096784;
     color: white;
     text-transform: uppercase;
     font-weight: 600;
@@ -579,6 +574,7 @@ body::-webkit-scrollbar-thumb{
     color: white;
     border: 1px solid var(--header);
 }
+#portfolio-content > div > label,
 #portfolio-content > div > label{
     margin-top: 15px;
     line-height: 1.8;
@@ -589,6 +585,11 @@ body::-webkit-scrollbar-thumb{
     border: 1px solid var(--button);
     box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.702);
     margin-right: 20px;
+}
+@media screen and (max-width: 576px){
+    #portfolio-content{
+        display: none;
+    }
 }
 @media screen and (max-width: 630px){
     #language-content{
@@ -605,13 +606,54 @@ body::-webkit-scrollbar-thumb{
         margin: 0 20px;
     }
 }
+
+.swiper{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 25px auto;
+    width: 100%;
+    padding: 0 20px 40px;
+    z-index: 0;
+}
+.swiper-btns{
+    position: absolute;
+    display: flex;
+    margin-top: 0;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 1;
+}
+.swiper-btns button{
+    position: static;
+    background-color: var(--pur-sky);
+    color: white;
+    border: none;
+    width: 43px;
+    height: 43px;
+    margin-top: 40px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 12pt;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.swiper-btns button:hover{
+    background-color: #DDDDDD;
+    color: black;
+}
+.swiper-pagination-bullet-active {
+    background-color: var(--blue) !important;
+}
 /*................... portfolio end.................  */
 
 
 /*................... contact start .................  */
 #contact{
-    margin-top: 200px;
-    margin-bottom: 100px;
+    margin-top: 130px;
+    margin-bottom: 80px;
 }
 #contact > h2{
     text-align: center;
@@ -634,7 +676,7 @@ body::-webkit-scrollbar-thumb{
     padding-bottom: 13px;
     margin-bottom: 16px;
     background-color: var(--bg);
-    border: 1px solid var(--bg);
+    border: 1px solid rgba(255, 255, 255, 0.373);
 }
 .form-control::placeholder{
     color: rgba(255, 255, 255, 0.784);
@@ -664,7 +706,7 @@ textarea{
 }
 @media screen and (max-width: 800px){
     #let-work{
-        padding-left: 20px !important;
+        padding-left: 10px !important;
     }
 }
 /*................... contact end .................  */

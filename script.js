@@ -18,3 +18,31 @@ function reveal(){
     }
   }
 }
+
+
+
+var swiper = new Swiper(".swiper", {
+  slidesPerView: 3,
+  spaceBetween: 25,
+  loop: false,
+  centerSlide: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".button-next",
+    prevEl: ".button-prev",
+  },
+  breakpoints: {
+    0: {
+        slidesPerView: 1,
+    },
+    770: {
+        slidesPerView: 2,
+    },
+    1000: {
+        slidesPerView: 3,
+    }
+  }
+});
