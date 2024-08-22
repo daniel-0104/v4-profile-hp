@@ -1,13 +1,13 @@
 :root{
-    --nav-bar : #114a6e;
+    --nav-bar : #154b6b;
     --body : #022F40;
     --tint: #00ddff;    
     --header: #0fd3ff;
     --button: #1176b1;
-    --bg: #042e438d;
+    --bg: #164666e4;
 }
 body{
-    background-image: linear-gradient(to right top, #154561, #114564, #0c4566, #074569, #02456b);
+    background-image: linear-gradient(to right top, #0a3957, #0c3b58, #0d3d5a, #0f3f5b, #11415c);
     color: white;
     transition: 0.8s;
 }
@@ -106,8 +106,7 @@ body::-webkit-scrollbar-thumb{
     height: 3rem;
     font-size: 14pt;
     text-decoration: none;
-    margin-right: 25px;
-    margin-bottom: 20px;
+    margin: 0 20px 16px 20px;
     text-align: center;
 }
 .animated-border-box, .animated-border-box-glow{
@@ -193,6 +192,13 @@ body::-webkit-scrollbar-thumb{
         margin-bottom: 40px;
     }
 }
+@media screen and (max-width: 540px){
+    #hello img{
+        width: 50% !important;
+        margin-top: -40px;
+        margin-bottom: 20px;
+    }
+}
 /*................... home end .................  */
 
 /*................... about me start .................  */
@@ -231,20 +237,6 @@ body::-webkit-scrollbar-thumb{
     background-color: var(--nav-bar);
     border: 1px solid var(--header);
 }
-/* #hire{
-    padding: 10px 30px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    background-color: var(--nav-bar);
-    border: 1px solid var(--header);
-    color: white;
-    box-shadow: 4px 3px 8px #0e3045;
-}
-#hire:hover{
-    background-color: var(--button);
-    color: white;
-    box-shadow: none;
-} */
 
 #skill{
     margin-top: 50px;
@@ -344,7 +336,7 @@ body::-webkit-scrollbar-thumb{
     justify-content: center;
     margin-left: -32px;
     margin-right: 30px;
-    background-color: #1b3f56;
+    background-color: #164b6c;
     color: #86e7ff;
     width: 40px;
     height: 40px;
@@ -395,8 +387,18 @@ body::-webkit-scrollbar-thumb{
     margin-top: -7px;
 	border-top: 7px solid transparent;
 	border-bottom: 7px solid transparent; 
-	border-right: 7px solid #073b55; 
+	border-right: 7px solid #094868; 
 }
+@media screen and (max-width: 450px){
+    #experience .row .col-lg-8{
+        background-color: red;
+        margin-right: 0 !important;
+    }
+    .bar {
+        padding: 10px 30px 8px 20px;
+    }
+}
+
 /*................... about me end .................  */
 
 
@@ -565,6 +567,21 @@ body::-webkit-scrollbar-thumb{
     border: 1px solid var(--button);
     box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.702);
     margin-right: 20px;
+}
+@media screen and (max-width: 630px){
+    #language-content{
+        display: block !important;
+    }
+    #language-content > span{
+        display: inline-block;
+        margin-bottom: 25px !important;
+    }
+    #portfolio-content{
+        padding: 40px 0 0;
+    }
+    #portfolio-content > div{
+        margin: 0 20px;
+    }
 }
 /*................... portfolio end.................  */
 
