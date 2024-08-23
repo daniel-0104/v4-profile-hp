@@ -1,13 +1,16 @@
 :root{
-    --nav-bar : #154b6b;
-    --body : #022F40;
-    --tint: #00ddff;    
+    --nav-bar : #1E1E1E;
+    --body : #052a37;
+    --tint: #1FC3FF;    
     --header: #0fd3ff;
-    --button: #1785c5;
-    --bg: #206189c8;
+    --button: #0d4f6f;
+    --bg: #2B2929;
 }
 body{
-    background-image: linear-gradient(to right top, #0a3957, #0c3b58, #0d3d5a, #0f3f5b, #11415c);
+    /* background-color: #353d42; */
+    background-image: linear-gradient(to right top, #3f3d3d, #3a3838, #353333, #302e2e, #2b2929);
+    /* background-image: linear-gradient(to right bottom, #3f3d3d, #3a3939, #363535, #313131, #2d2d2d); */
+    /* background-image: linear-gradient(to right top, #0a3957, #0c3b58, #0d3d5a, #0f3f5b, #11415c); */
     color: white;
     transition: 0.8s;
 }
@@ -399,7 +402,7 @@ body::-webkit-scrollbar-thumb{
     margin-top: -7px;
 	border-top: 7px solid transparent;
 	border-bottom: 7px solid transparent; 
-	border-right: 7px solid #164666; 
+	border-right: 7px solid #1b5a81; 
 }
 @media screen and (max-width: 450px){
     #ex-icon{
