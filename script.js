@@ -19,33 +19,23 @@ function reveal(){
   }
 }
 
-window.addEventListener('load', function() {
-  document.getElementById('preloader').style.display = 'none';
-});
-
-
-// var swiper = new Swiper(".swiper", {
-//   slidesPerView: 3,
-//   spaceBetween: 25,
-//   loop: false,
-//   centerSlide: true,
-//   pagination: {
-//     el: ".swiper-pagination",
-//     clickable: true,
-//   },
-//   navigation: {
-//     nextEl: ".button-next",
-//     prevEl: ".button-prev",
-//   },
-//   breakpoints: {
-//     0: {
-//         slidesPerView: 1,
-//     },
-//     770: {
-//         slidesPerView: 2,
-//     },
-//     1000: {
-//         slidesPerView: 3,
-//     }
-//   }
+// window.addEventListener('load', function() {
+//   document.getElementById('preloader').style.display = 'none';
 // });
+
+
+var swiper = new Swiper(".swiper", {
+  slidesPerView: 1,
+  spaceBetween: 25,
+  loop: true,
+  centerSlide: true,
+  grabCursor: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".button-next",
+    prevEl: ".button-prev",
+  }
+});

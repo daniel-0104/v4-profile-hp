@@ -578,8 +578,7 @@ body::-webkit-scrollbar-thumb{
 #portfolio-content{
     margin-bottom: 80px !important;
 }
-#portfolio-content,
-#portfolio-content-ph{
+#portfolio-content{
     background-color: var(--bg);
     border: 2px solid var(--button);
     margin: 0 20px;
@@ -587,18 +586,20 @@ body::-webkit-scrollbar-thumb{
     border-radius: 8px;
     box-shadow: rgba(34, 34, 39, 0.897) 0px 6px 12px -2px, rgba(0, 0, 0, 0.61) 0px 3px 7px -3px;
 }
+#portfolio-content-ph{
+    display: none;
+}
 #portfolio-content > img,
 #portfolio-content-ph > img{
     width: 90%;
 }
-#portfolio-content > div,
-#portfolio-content-ph > div{
+#portfolio-content > div{
     margin: 0 50px;
     border-top: 1px solid var(--header);
     padding-top: 20px;
 }
 #portfolio-content > div h3,
-#portfolio-content > div h3{
+#portfolio-content-ph > div h3{
     text-transform: uppercase;
     font-family: calibri;
     font-weight: bold;
@@ -613,7 +614,6 @@ body::-webkit-scrollbar-thumb{
 #demo:hover{
     color: var(--body);
 }
-#portfolio-content > div > label,
 #portfolio-content > div > label{
     margin-top: 15px;
     line-height: 1.8;
@@ -628,6 +628,38 @@ body::-webkit-scrollbar-thumb{
 @media screen and (max-width: 576px){
     #portfolio-content{
         display: none;
+    }
+    #portfolio-content-ph{
+        display: block;
+        height: 540px;
+        background-color: var(--bg);
+        border: 2px solid var(--button);
+        margin: 0 20px 50px;
+        padding: 20px 0;
+        border-radius: 8px;
+        box-shadow: rgba(34, 34, 39, 0.897) 0px 6px 12px -2px, rgba(0, 0, 0, 0.61) 0px 3px 7px -3px;
+    }
+    #portfolio-content-ph > div h3{
+        font-size: 16pt;
+    }
+    #demo{
+        font-size: 10pt;
+        padding: 5px 20px;
+    }
+    #portfolio-content-ph > div > label{
+        margin-top: 10px;
+        line-height: 1.7;
+        font-size: 11pt;
+    }
+    #portfolio-content-ph > div{
+        margin: 0 20px;
+        border-top: 1px solid var(--header);
+        padding-top: 20px;
+    }
+    #language-content > span{
+        padding: 8px 15px;
+        font-size: 11pt;
+        margin-right: 15px;
     }
 }
 @media screen and (max-width: 630px){
@@ -654,7 +686,7 @@ body::-webkit-scrollbar-thumb{
     justify-content: center;
     margin: 25px auto;
     width: 100%;
-    padding: 0 20px 40px;
+    padding: 0 35px 0;
     z-index: 0;
 }
 .swiper-btns{
@@ -667,8 +699,8 @@ body::-webkit-scrollbar-thumb{
 }
 .swiper-btns button{
     position: static;
-    background-color: var(--pur-sky);
-    color: white;
+    background-color: var(--header);
+    color: black;
     border: none;
     width: 43px;
     height: 43px;
@@ -679,12 +711,8 @@ body::-webkit-scrollbar-thumb{
     top: 50%;
     transform: translateY(-50%);
 }
-.swiper-btns button:hover{
-    background-color: #DDDDDD;
-    color: black;
-}
 .swiper-pagination-bullet-active {
-    background-color: var(--blue) !important;
+    background-color: var(--tint) !important;
 }
 /*................... portfolio end.................  */
 
