@@ -632,12 +632,21 @@ body::-webkit-scrollbar-thumb{
     }
 }
 @media screen and (max-width: 576px){
+    #portfolio{
+        margin-top: -50px;
+    }
+    #portfolio > .d-flex > h2{
+        font-size: 18pt !important;
+    }
+    #portfolio > .d-flex{
+        margin-bottom: -30px !important;
+    }
     #portfolio-content{
         display: none;
     }
     #portfolio-content-ph{
         display: block;
-        height: 480px;
+        height: fit-content;
         background-color: var(--bg);
         border: 2px solid var(--button);
         margin: 0 20px 40px;
@@ -669,10 +678,6 @@ body::-webkit-scrollbar-thumb{
     }
 }
 @media screen and (max-width: 477px){
-    #portfolio-content-ph{
-        display: block;
-        height: fit-content;
-    }
     #language-content{
         margin-top: 12px !important;
     }
@@ -682,8 +687,8 @@ body::-webkit-scrollbar-thumb{
         margin-right: 10px;
     }
     .swiper-btns button{
-        width: 38px !important;
-        height: 38px !important;
+        width: 36px !important;
+        height: 36px !important;
         font-size: 11pt !important;
     }
     #portfolio-content-ph > div > label{
@@ -692,15 +697,20 @@ body::-webkit-scrollbar-thumb{
     }
 }
 @media screen and (max-width: 399px){
+    #portfolio-content-ph > div h3{
+        font-size: 15pt;
+        margin-bottom: 0;
+    }
     #language-content{
         display: block !important;
     }
-    #language-content > span{
-        margin-bottom: 50px !important;
+    #language-content span{
+        display: inline-block;
         padding: 6px 10px !important;
-        margin-right: 10px !important;
+        margin-bottom: 10px !important;
     }
 }
+
 
 .swiper{
     position: relative;
