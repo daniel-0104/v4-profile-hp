@@ -1,7 +1,7 @@
 :root{
     --nav-bar : #093250;
     --body: #152b37;
-    --tint: #28cae6;    
+    --tint: #0ef2f6;    
     --header: #0fd3ff;
     --button: #0a598a;
     --bg: #0a3c59;
@@ -481,9 +481,10 @@ body::-webkit-scrollbar-thumb{
     padding: 25px 20px 15px;
     background-color: var(--bg);
     border: 1px solid rgba(255, 255, 255, 0.702);
-    border-top: 3px solid var(--tint);
-    border-bottom: 4px solid var(--tint);
+    border-top: 3px solid var(--header);
+    border-bottom: 2px solid var(--tint);
     border-radius: 15px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.503);
 }
 
 /* #services{
@@ -611,6 +612,7 @@ body::-webkit-scrollbar-thumb{
 #services > div:first-child > h2{
     font-size: 24pt;
     text-transform: uppercase;
+    font-weight: bold;
 }
 #portfolio-content{
     margin-bottom: 80px !important;
