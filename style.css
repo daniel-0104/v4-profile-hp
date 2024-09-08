@@ -1,5 +1,5 @@
 :root{
-    --nav-bar : #093250;
+    --nav-bar : #0b395f;
     --body: #152b37;
     --tint: #0ef2f6;    
     --header: #0fd3ff;
@@ -7,7 +7,7 @@
     --bg: #0b4364;
 }
 body{
-    background-image: linear-gradient(to right top, #0a598a, #0b4f7b, #0b456c, #0a3b5e, #093250);
+    background-image: linear-gradient(to right, #032d46, #042e48, #05304b, #07314d, #093250);
     color: white;
     transition: 0.8s;
 }
