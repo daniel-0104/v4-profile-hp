@@ -70,6 +70,11 @@ body::-webkit-scrollbar-thumb{
 .nav-link:hover{
     color: var(--tint);
 }
+.navbar-brand img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
 .navbar-toggler{
     border: none;
     color: white;
@@ -227,11 +232,17 @@ body::-webkit-scrollbar-thumb{
         margin-top: -40px;
         margin-bottom: 20px;
     }
+    #hello h3{
+        font-size: 16pt !important;
+    }
     #hello h1{
-        font-size: 26pt;
+        margin-top: 0;
+        font-size: 24pt;
     }
     #hello p{
+        font-size: 12pt;
         margin-top: 12px !important;
+        margin-bottom: 30px !important;
     }
 }
 /*................... home end .................  */
@@ -274,8 +285,7 @@ body::-webkit-scrollbar-thumb{
     #about-content{
         margin-bottom: -30px;
     }
-    #about-content > .d-flex > i,
-    #services > .d-flex > i{
+    #about-content > .d-flex > i{
         font-size: 17pt !important;
     }
     #about-content > .d-flex > h2,
@@ -290,11 +300,11 @@ body::-webkit-scrollbar-thumb{
     #about-content{
         padding: 0 20px;
     }
-    #about-content h2{
-        font-size: 16pt !important;
+    #about-content > .d-flex > h2{
+        font-size: 15pt !important;
     }
     #about-content > .d-flex > i{
-        font-size: 15pt;
+        font-size: 13pt !important;
     }
     #about-content label{
         font-size: 11pt;
@@ -514,6 +524,9 @@ body::-webkit-scrollbar-thumb{
     #services-content h5{
         font-size: 13pt;
     }
+    #services > .d-flex > i{
+        font-size: 18pt !important;
+    }
 }
  
 /*................... services end .................  */
@@ -619,9 +632,9 @@ body::-webkit-scrollbar-thumb{
         display: block;
         height: fit-content;
         background-color: var(--bg);
-        border: 2px solid var(--button);
-        margin: 0 20px 40px;
-        padding: 20px 0 30px;
+        border: 1px solid rgba(255, 255, 255, 0.702);
+        margin: 30px 20px 40px;
+        padding: 20px 0 25px;
         border-radius: 8px;
         box-shadow: rgba(34, 34, 39, 0.897) 0px 6px 12px -2px, rgba(0, 0, 0, 0.61) 0px 3px 7px -3px;
     }
@@ -665,11 +678,12 @@ body::-webkit-scrollbar-thumb{
     #portfolio-content-ph > div > label{
         line-height: 1.5 !important;
         height: 120px;
+        margin: 16px 0 20px;
     }
 }
 @media screen and (max-width: 399px){
     #portfolio-content-ph > div h3{
-        font-size: 15pt;
+        font-size: 14pt;
         margin-bottom: 0;
     }
     #language-content{
@@ -707,6 +721,9 @@ body::-webkit-scrollbar-thumb{
     background-color: var(--header);
     color: black;
     border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 43px;
     height: 43px;
     border-radius: 50px;
