@@ -7,7 +7,7 @@
     --bg: #0a3c59;
 }
 body{
-    background-image: linear-gradient(to right top, #1c4a6e, #174c72, #11496b, #11496c, #165074);
+    background-image: linear-gradient(to right top, #1c5a89, #1e5277, #155b87, #115d8b, #206794);
 
     /* background-image: linear-gradient(to right top, #0a3957, #0c3b58, #0d3d5a, #0f3f5b, #11415c); */
     color: white;
@@ -276,11 +276,13 @@ body::-webkit-scrollbar-thumb{
     #about-content{
         margin-bottom: -30px;
     }
-    #about-content > .d-flex > i{
-        font-size: 17pt;
+    #about-content > .d-flex > i,
+    #services > .d-flex > i{
+        font-size: 17pt !important;
     }
-    #about-content > .d-flex > h2{
-        font-size: 19pt;
+    #about-content > .d-flex > h2,
+    #services > .d-flex > h2{
+        font-size: 19pt !important;
     }
 }
 @media screen and (max-width: 450px){
@@ -490,116 +492,32 @@ body::-webkit-scrollbar-thumb{
     margin-bottom: 20px;
 }
 #services-content > div:hover .d-flex{
-    color: var(--header);
+    color: var(--tint);
     transform: scale(1.01);
 }
 #web,#creative,#photo{
     padding: 25px 20px 15px;
     background-color: var(--bg);
     border: 1px solid rgba(255, 255, 255, 0.702);
-    border-top: 3px solid var(--header);
-    border-bottom: 2px solid var(--tint);
     border-radius: 15px;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.503);
 }
-
-/* #services{
-    margin-top: 130px;
-    margin-bottom: 100px;
-}
-#services > div,
-#img-background > img{
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 120vh;
-    object-fit: cover;
-}
-#img-background > span{
-    position: absolute;
-    top: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: #1b374594;
-}
-#service-content{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    padding: 70px 0;
-} */
-/* #service-content > div > h2{
-    text-align: center;
-    font-size: 28pt;
-    margin-bottom: 50px;
-    text-transform: uppercase;
-    font-weight: bold;
-} */
-/* .dev-service{
-    border-right: 1px solid var(--tint);
-    border-bottom: 1px solid var(--tint);
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-.responsive-service{
-    padding-left: 40px;
-    border-bottom: 1px solid var(--tint);
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-.experience-service{
-    padding: 40px 10px;
-    border-bottom: 1px solid var(--tint);
-}
-.dev-service p,
-.responsive-service p,
-.experience-service p{
-    font-family: calibri;
-    font-size: 14pt;
-}
-@media screen and (max-width: 992px){
-    #service-content .row{
-        padding: 0 30px;
+@media screen and (max-width: 767px){
+    #services{
+        margin-bottom: 190px;
     }
-}
-@media screen and (max-width: 768px){
-    #services > div,
-    #img-background > img{
-        height: 140vh;
+    #services > .mx-5{
+        margin: auto 20px !important;
     }
-    .dev-service{
-        border-right: none;
+    #services-content p{
+        margin-top: 0 !important;
+        font-size: 11pt !important;
     }
-    .responsive-service{
-        padding-left: 10px;
-    }
-    .experience-service{
-        padding: 20px 10px;
-    }
-}
-@media screen and (min-width: 470px) and (max-width: 603px){
-    #services > div,
-    #img-background > img{
-        height: 160vh;
-    }
-}
-@media screen and (max-width: 469px){
-    #service-content .row{
-        padding: 0 20px;
-    }
-    #services > div,
-    #img-background > img{
-        height: 180vh;
-    }
-    .dev-service p,
-    .responsive-service p,
-    .experience-service p{
-        font-family: calibri;
+    #services-content h5{
         font-size: 13pt;
     }
-} */
+}
+ 
 /*................... services end .................  */
 
 
