@@ -470,6 +470,7 @@ body::-webkit-scrollbar-thumb{
     .bar > p{
         line-height: 1.5;
         margin-top: 10px;
+        font-size: 11pt;
     }
     #experience #span-block{
         margin-left: -24px;
