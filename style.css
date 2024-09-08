@@ -4,12 +4,10 @@
     --tint: #0ef2f6;    
     --header: #0fd3ff;
     --button: #0a598a;
-    --bg: #0a3c59;
+    --bg: #0b4364;
 }
 body{
-    background-image: linear-gradient(to right top, #1c5a89, #1e5277, #155b87, #115d8b, #206794);
-
-    /* background-image: linear-gradient(to right top, #0a3957, #0c3b58, #0d3d5a, #0f3f5b, #11415c); */
+    background-image: linear-gradient(to right top, #0a598a, #0b4f7b, #0b456c, #0a3b5e, #093250);
     color: white;
     transition: 0.8s;
 }
@@ -553,11 +551,11 @@ body::-webkit-scrollbar-thumb{
 }
 #portfolio-content{
     background-color: var(--bg);
-    border: 2px solid var(--button);
+    border: 1px solid rgba(255, 255, 255, 0.702);
     margin: 0 20px;
     padding: 40px 0;
     border-radius: 8px;
-    box-shadow: rgba(34, 34, 39, 0.897) 0px 6px 12px -2px, rgba(0, 0, 0, 0.61) 0px 3px 7px -3px;
+    box-shadow: rgba(34, 34, 39, 0.897) 0px 6px 12px -2px, rgba(0, 0, 0, 0.479) 0px 3px 7px -3px;
 }
 #portfolio-content-ph{
     display: none;
