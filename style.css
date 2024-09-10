@@ -14,7 +14,7 @@ body{
 }
 .reveal{
     position: relative;
-    transform: translateY(130px);
+    transform: translateY(80px);
     opacity: 0;
     transition: 1s all ease;
 }  
