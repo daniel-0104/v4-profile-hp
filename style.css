@@ -7,7 +7,7 @@
     --bg: #0b4364;
 }
 body{
-    background-image: linear-gradient(to right, #032d46, #042e48, #05304b, #07314d, #093250);
+    background: linear-gradient(to right, #032d46, #042e48, #05304b, #07314d, #093250);
     color: white;
     transition: 0.8s;
 }
@@ -233,16 +233,19 @@ body::-webkit-scrollbar-thumb{
         margin-bottom: 20px;
     }
     #hello h3{
-        font-size: 16pt !important;
+        font-size: 14pt !important;
     }
     #hello h1{
-        margin-top: 0;
-        font-size: 24pt;
+        margin-top: -3px !important;
+        font-size: 22pt !important;
     }
     #hello p{
-        font-size: 12pt;
+        font-size: 11pt;
         margin-top: 12px !important;
         margin-bottom: 30px !important;
+    }
+    #home{
+        margin-bottom: 40px;
     }
 }
 /*................... home end .................  */
@@ -304,7 +307,7 @@ body::-webkit-scrollbar-thumb{
         font-size: 15pt !important;
     }
     #about-content > .d-flex > i{
-        font-size: 13pt !important;
+        font-size: 14pt !important;
     }
     #about-content label{
         font-size: 11pt;
@@ -527,6 +530,9 @@ body::-webkit-scrollbar-thumb{
     #services > .d-flex > i{
         font-size: 18pt !important;
     }
+    #services > .d-flex{
+        margin-bottom: 14px !important;
+    }
 }
  
 /*................... services end .................  */
@@ -638,6 +644,9 @@ body::-webkit-scrollbar-thumb{
         border-radius: 8px;
         box-shadow: rgba(34, 34, 39, 0.897) 0px 6px 12px -2px, rgba(0, 0, 0, 0.61) 0px 3px 7px -3px;
     }
+    .swiper-btns{
+        display: block;
+    }
     #portfolio-content-ph > div h3{
         font-size: 16pt;
     }
@@ -709,6 +718,7 @@ body::-webkit-scrollbar-thumb{
     z-index: 0;
 }
 .swiper-btns{
+    display: none;
     position: absolute;
     display: flex;
     margin-top: 0;
