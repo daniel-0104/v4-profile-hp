@@ -14,7 +14,7 @@ body{
 }
 .reveal{
     position: relative;
-    transform: translateY(80px);
+    transform: translateY(60px);
     opacity: 0;
     transition: 1s all ease;
 }  
@@ -792,10 +792,11 @@ body::-webkit-scrollbar-thumb{
     margin-bottom: 16px;
     background-color: var(--bg);
     border: 1px solid rgba(255, 255, 255, 0.373);
+    color: white !important;
 }
 .form-control::placeholder{
-    color: rgba(255, 255, 255, 0.784);
-   margin-bottom: -10px;
+    color: rgba(255, 255, 255, 0.784) !important;
+    margin-bottom: -10px;
 }
 .form-control:focus{
     box-shadow: none;
@@ -803,6 +804,16 @@ body::-webkit-scrollbar-thumb{
     border: 1px solid var(--header);
     color: white;
 }
+.form-control:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px var(--bg) inset !important; /* Force the background color */
+    -webkit-text-fill-color: white !important; /* Ensure the text color stays white */
+}
+
+.form-control:-webkit-autofill:hover,
+.form-control:-webkit-autofill:focus {
+    -webkit-text-fill-color: white !important;
+}
+
 textarea{
     resize: none !important;
 }
