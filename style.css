@@ -304,10 +304,11 @@ body::-webkit-scrollbar-thumb{
     }
     #about-content > .d-flex > h2{
         font-size: 15pt !important;
+        margin-left: -5px !important;
     }
     #about-content > .d-flex > i{
         font-size: 14pt !important;
-        margin-bottom: 5px;
+        margin-bottom: 8px !important;
     }
     #about-content label{
         font-size: 11pt;
@@ -540,7 +541,7 @@ body::-webkit-scrollbar-thumb{
     }
     #services > .d-flex > i{
         font-size: 18pt !important;
-        margin-bottom: 8px !important;
+        margin-bottom: 10px !important;
     }
     #services > .d-flex{
         margin-bottom: 14px !important;
@@ -685,7 +686,7 @@ body::-webkit-scrollbar-thumb{
     }
     #portfolio > div:first-child > i{
         font-size: 18pt;
-        margin-bottom: 5px;
+        margin-bottom: 8px !important;
     }
 }
 @media screen and (max-width: 477px){
