@@ -7,11 +7,12 @@
     --bg: #0b4364;
 }
 body{
-    background: linear-gradient(to right, #032d46, #042e48, #05304b, #07314d, #093250);
+    background-color: #032d46;
+    background-image: linear-gradient(to right, #032d46, #042e48, #05304b, #07314d, #093250);
     color: white;
     transition: 0.8s;
 }
-/* .reveal{
+.reveal{
     position: relative;
     transform: translateY(130px);
     opacity: 0;
@@ -21,7 +22,7 @@ body{
 {
     transform: translateY(0);
     opacity: 1;
-} */
+}
 body::-webkit-scrollbar{
     width: 5px;
 }
@@ -34,32 +35,30 @@ body::-webkit-scrollbar-thumb{
 }
 
 
-#preloader {
+/* #preloader {
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     z-index: 9999;
-    background-color: #000; /* Background color of the preloader */
+    background-color: #000;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .spinner {
-    border: 6px solid var(--body); /* Light grey */
-    border-top: 6px solid var(--tint); /* Blue */
+    border: 6px solid var(--body);
+    border-top: 6px solid var(--tint);
     border-radius: 50%;
     width: 50px;
     height: 50px;
     animation: spin 2s linear infinite;
 }
-
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
-}
+} */
 
 
 /*................... nav bar start .................  */
@@ -291,7 +290,8 @@ body::-webkit-scrollbar-thumb{
         font-size: 17pt !important;
     }
     #about-content > .d-flex > h2,
-    #services > .d-flex > h2{
+    #services > .d-flex > h2,
+    #contact > .d-flex:first-child > h2{
         font-size: 19pt !important;
     }
 }
@@ -391,6 +391,17 @@ body::-webkit-scrollbar-thumb{
     }
 }
 @media screen and (max-width: 576px){
+    #skill-content .col-lg-5 .d-flex:first-child > i,
+    #skill-content .col-lg-7 .d-flex:first-child > i,
+    #skill-content .col-lg-7 .d-flex:nth-child(2) > i{
+        font-size: 11pt !important;
+    }
+    #skill-content .col-lg-5 .d-flex:first-child > h5,
+    #skill-content .col-lg-7 .d-flex:first-child > h5,
+    #skill-content .col-lg-7 .d-flex:nth-child(2) > h5{
+        margin-left: 10px !important;
+        font-size: 13pt !important;
+    }
     #development-content h6{
         width: 100%;
         height: 50px;
@@ -529,7 +540,7 @@ body::-webkit-scrollbar-thumb{
     }
     #services > .d-flex > i{
         font-size: 18pt !important;
-        margin-bottom: 5px !important;
+        margin-bottom: 8px !important;
     }
     #services > .d-flex{
         margin-bottom: 14px !important;
@@ -554,14 +565,16 @@ body::-webkit-scrollbar-thumb{
 }
 #portfolio > div:first-child > i,
 #about-content i,
-#services > .d-flex:first-child > i{
+#services > .d-flex:first-child > i,
+#contact > .d-flex:first-child > i{
     color: var(--tint);
     font-size: 20pt;
     margin-bottom: 4px;
 }
 #portfolio > div:first-child > h2,
 #about-content h2,
-#services > div:first-child > h2{
+#services > div:first-child > h2,
+#contact > .d-flex:first-child > h2{
     font-size: 24pt;
     text-transform: uppercase;
     font-weight: bold;
@@ -755,13 +768,11 @@ body::-webkit-scrollbar-thumb{
 
 /*................... contact start .................  */
 #contact{
-    margin-top: 130px;
+    margin-top: 110px;
     margin-bottom: 80px;
 }
-#contact > h2{
-    text-align: center;
-    font-size: 30pt;
-    margin-bottom: 50px;
+#contact > .d-flex:first-child{
+    margin-bottom: 15px !important;
 }
 #contact-info{
     margin-top: 30px;
@@ -808,9 +819,22 @@ textarea{
 #send:focus{
     border: 1px solid var(--nav-bar);
 }
-@media screen and (max-width: 800px){
+@media screen and (max-width: 767px){
     #let-work{
-        padding-left: 10px !important;
+        margin-top: -10px;
+        margin-bottom: 20px;
+        padding-left: 13px !important;
+    }
+    #contact-info{
+        margin-top: 20px;
+        font-size: 14pt;
+    }
+    #contact-info > p{
+        padding: 6px 0;
+    }
+    #contact > .d-flex > i{
+        font-size: 18pt !important;
+        margin-bottom: 8px !important;
     }
 }
 /*................... contact end .................  */
@@ -845,5 +869,18 @@ hr{
     margin-top: 15px;
     color: white;
     font-size: 15pt;
+}
+@media screen and (max-width: 450px){
+    #footer{
+        padding:0 0 18px !important;
+    }
+    #footer-social > a{
+        font-size: 15pt !important;
+        padding: 20px;
+    }
+    #footer-text > p{
+        font-size: 12pt;
+        margin-top: 18px;
+    }
 }
 /*................... footer end .................  */
