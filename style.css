@@ -228,15 +228,14 @@ body::-webkit-scrollbar-thumb{
 }
 @media screen and (max-width: 540px){
     #hello img{
-        width: 50% !important;
-        margin-top: -40px;
+        width: 55% !important;
+        margin-top: -20px;
         margin-bottom: 20px;
     }
     #hello h3{
         font-size: 14pt !important;
     }
     #hello h1{
-        margin-top: -3px !important;
         font-size: 22pt !important;
     }
     #hello p{
@@ -245,7 +244,7 @@ body::-webkit-scrollbar-thumb{
         margin-bottom: 30px !important;
     }
     #home{
-        margin-bottom: 40px;
+        margin-bottom: 30px;
     }
 }
 /*................... home end .................  */
@@ -298,7 +297,7 @@ body::-webkit-scrollbar-thumb{
 }
 @media screen and (max-width: 450px){
     #about{
-        padding-top: 30px;
+        padding-top: 50px;
     }
     #about-content{
         padding: 0 20px;
@@ -308,13 +307,14 @@ body::-webkit-scrollbar-thumb{
     }
     #about-content > .d-flex > i{
         font-size: 14pt !important;
+        margin-bottom: 5px;
     }
     #about-content label{
         font-size: 11pt;
     }
     #about-content > p{
         line-height: 1.6;
-        font-size: 12pt;
+        font-size: 11pt;
     }
 }
 
@@ -529,6 +529,7 @@ body::-webkit-scrollbar-thumb{
     }
     #services > .d-flex > i{
         font-size: 18pt !important;
+        margin-bottom: 5px !important;
     }
     #services > .d-flex{
         margin-bottom: 14px !important;
@@ -668,6 +669,10 @@ body::-webkit-scrollbar-thumb{
         padding: 8px 15px;
         font-size: 11pt;
         margin-right: 15px;
+    }
+    #portfolio > div:first-child > i{
+        font-size: 18pt;
+        margin-bottom: 5px;
     }
 }
 @media screen and (max-width: 477px){
